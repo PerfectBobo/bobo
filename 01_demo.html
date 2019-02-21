@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    table {
+        border: 1px solid purple;
+        border-radius: 4px;
+        padding: 30px;
+        background: rgba(210, 152, 111, 0.1);
+        margin-top: 50px;
+        box-shadow: 2px 2px 20px purple;
+    }
+
+    [name=captcha] {
+        width: 101px;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="01_demo1.php" method="post">
+        <table>
+            <tr>
+                <td>账号:</td>
+                <td><input type="text" name="user"></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td valign="top">验证码:</td>
+                <td><input type="text" name="captcha"><br>
+                    <img src="01_demo1.1.php" height="30"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="登录"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
